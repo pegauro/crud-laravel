@@ -24,3 +24,5 @@ Route::get('/admin/cursos/editar/{id}', ['as' => 'admin.cursos.editar', 'uses' =
 Route::put('/admin/cursos/atualizar/{id}', ['as' => 'admin.cursos.atualizar', 'uses' => 'App\Http\Controllers\Admin\CursoController@atualizar']);
 
 Route::get('/admin/cursos/excluir/{id}', ['as' => 'admin.cursos.excluir', 'uses' => 'App\Http\Controllers\Admin\CursoController@excluir']);
+
+Route::get('/', ['as'=>'site.home','uses'=>'App\Http\Controllers\Site\HomeController@index']);
